@@ -8,6 +8,8 @@ the file (Screenshot (9).png), shows the theoritical wave generation and compari
 
 In the next image (Screenshot (10).png), i desinged the power supply and the Signal input. the power supply was a standard 5v coming from the barrel jack which will pass through bulk capacitors so that if the whole circuit demands too much current, then the bulk will be able to supply the necessary current. The values of bulk capacitors are standards values of 0.1u and 10u. The screw terminal in the bottom is used to get the input signal from outside the system. 
 
+![image alt](https://github.com/Adiasok/ADithya-class-d-/blob/main/Screenshot%20(11).png?raw=truehttps://github.com/Adiasok/ADithya-class-d-/blob/main/Screenshot%20(11).png?raw=true)
+
 in the next image (Screenshot (11).png), we have two parts of the circuit, dead time generation and the mosfet switching. Dead time generation is ery important, as it negates the chances of short circuiting the mosfet in case the rising of one edge touches the falling of the other ones edge. This leads to large of amount of current generated which will fry the mosfet. The mosfet used here is the IRF3205, a n channel mosfet. In the higher switching side capacitors are added to provide the gate with voltage higher than Vcc. 
 
 The output is again a pwm signal which gets filtered by the LC filter into the amplified signal.
